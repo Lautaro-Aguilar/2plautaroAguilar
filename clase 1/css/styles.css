@@ -1,0 +1,29 @@
+body {
+  /* background-color: red */
+}
+
+.bordesRojos {
+  border: 1px solid #ff0000;
+  border-color: red;
+  width: 100%;
+}
+
+.bordesRojos td {
+  border: 1px solid red;
+}
+
+.bordesRojos th {
+  border: 1px solid red;
+}
+
+.bordesVerdes {
+  border: 1px solid #00ff00;
+  border-color: green;
+  width: 100%;
+}
+.bordesVerdes td {
+  border: 1px solid green;
+}
+.bordesVerdes th {
+  border: 1px solid green;
+}

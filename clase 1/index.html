@@ -1,18 +1,51 @@
-<!DOCTYPE html> <!-- !DOCTYPE Le dice al navegador que version de HTML se esta utilizando.-->
-<html lang="es"> <!-- Determina el idioma de la página -->
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lautaro Aguilar</title>
-</head>
-<body>
-  <h1>Programacion 2</h1>
-  <input type="text" name="Input de Text" id="inputText">
-  <button type="submit">Enviar</button>
-</body>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lautaro Aguilar</title>
+  </head>
+  <body>
+    <h1>Programacion 2</h1>
+    <label for="inputText">Escribí tu nombre</label>
+    <input type="text" name="Input de Text" id="inputTexto" placeholder="Ejemplo: Lautaro Aguilar"/>
+    <button id="inputEnviar" 
+    onclick="mostrarValor()"
+    >Enviar
+  </button>
+    <!--TABLA ROJA -->
+      <table class="bordesRojos">
+          <tr>
+            <th >Nombre</th>
+            <th>Apellido</th>
+            <th>Dni</th>
+          </tr>
+          <tr>
+            <td>Lautaro</td>
+            <td>Aguilar</td>
+            <td>12345678</td>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      <!--TABLA VERDE -->
+      </table>
+      <table class="bordesVerdes">
+        <tr >
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Dni</th>
+        </tr>
+        <tr>
+          <td>Lautaro</td>
+          <td>Aguilar</td>
+          <td>12345678</td>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <script src="js/funciones.js"></script>
+  </body>
 </html>
-<script> 
-  alert('Hola mundo Alert')
-  console.log('Hola mundo Console')
-</script>
+  

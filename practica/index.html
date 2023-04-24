@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+          <div class="contenedor">
+            <div class="personalInfo">
+              <label for="username">Nombre</label>
+              <input type="text" name="nombre">
+              <label for="username">Apellido</label>
+              <input type="text" name="apellido">
+              <label for="username">Edad</label>
+              <input type="edad" name="username">
+            </div>
+
+            <p>Seleccione un color</p>
+            <div class="selectColor">
+              <input type="radio" name="colores" class="colores" value="rojo">Rojo
+              <input type="radio" name="colores" class="colores" value="azul">Azul
+              <input type="radio" name="colores" class="colores" value="verde" id="color">Verde
+            </div>
+
+            <p>querySelector</p>
+            <div class="selectColor">
+              <input type="checkbox" class="checkboxes" name="checkbox" value="rojo">Rojo
+              <input type="checkbox" class="checkboxes" name="checkbox" value="azul">Azul
+              <input type="checkbox" class="checkboxes" name="checkbox" value="verde">Verde
+            </div>
+            <input type="button" value="Enviar" onclick="enviar()" id="loginSubmit">
+          </div>
+
+          <span id="test"></span>
+    </form>
+    <script src="js/app.js"></script>
+  </body>
+</html>

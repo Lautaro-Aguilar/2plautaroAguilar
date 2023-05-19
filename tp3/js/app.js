@@ -7,7 +7,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var marker = L.marker([-99999, -99999]);
-
+const contenedor = document.getElementById('tarjetaUser')
 const botonConsultar = document.getElementById("consultar");
 const inputId = document.getElementById("numero");
 const mapa = document.getElementById('map')
@@ -18,12 +18,9 @@ botonConsultar.addEventListener("click", async () => {
   const nombre = document.getElementById("nombre");
   const apellido = document.getElementById("apellido");
   const codigo = document.getElementById("codigo");
-  const contenedor = document.getElementById('test')
-  const latitud = document.getElementById('latitud')
-  const longitud = document.getElementById('longitud')
   const imagen = document.getElementById('imagen')
   const genero = document.getElementById('genero')
-  
+
   const response = await fetch("https://randomuser.me/api/");
   const responseJson = await response.json();
   const resultado = responseJson.results[0];
@@ -32,20 +29,16 @@ botonConsultar.addEventListener("click", async () => {
   apellido.textContent = resultado.name.last
 
   codigo.textContent = resultado.id.name + ': ' + resultado.id.value
-
-  latitud.textContent = resultado.location.coordinates.latitude
-  longitud.textContent = resultado.location.coordinates.longitude
-
   latitudvar = resultado.location.coordinates.latitude
   longitudvar = resultado.location.coordinates.longitude
   imagen.src = resultado.picture.medium
 
   genero.textContent = resultado.gender
   if (genero.textContent === 'male') {
-    contenedor.className = '';
+    contenedor.classList.remove('textoVerde');
     contenedor.classList.add('textoAmarillo')
   } else {
-    contenedor.className = ''
+    contenedor.classList.remove('textoAmarillo')
     contenedor.classList.add('textoVerde')
   }
   var myIcon = L.icon({

@@ -1,49 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div>
-        <input id="numero1" />
-        <input id="numero2" />
-          <button id="consultar">Consultar</button>
-      </div>
-      <div class="sWrapper">
-        <div id="test" class="card">
-          <img id="imagen" class="imagen" src="" alt="" />
-          <br />
-          <p>Nombre:</p> <span id="nombre1"></span>
-          <br />
-          <p>Especie:</p> <span id="especie1"></span>
-          <br />
-          <p>Estado:</p> <span id="estado1"></span>
-          <br />
-          <p>Cantidad de Episodios:</p> <span id="cantEpisodios1"></span>
-          <br />
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/leaflet.css">
+  <title>Tp 3 LautaroAguilar</title>
+</head>
+<body>
+  <main id="test" class="card">
+    <img id="imagen" class="imagen" src="" alt="" />
+    <br />
+    <p>Nombre: <span id="nombre"></span></p> 
+    <br />
+    <p>Apellido: <span id="apellido"></span></p> 
+    <br />
+    <p>Genero: <span id="genero"></span></p> 
+    <br />
+    <p>CodID: <span id="codigo"></span></p>
+    <br />
+    <p>Coordenadas: <span id="coordenadas"></span></p> 
+    <p>Latitud: <span id="latitud"></span> </p>
+    <p>Longitud: <span id="longitud"></span> </p> 
+    <input id="numero" />
+    <button id="consultar">Consultar</button>
 
-        <div id="test" class="card">
-          <img id="imagenTwo" class="imagen" src="" alt="" />
-          <br />
-          <p>Nombre:</p> <span id="nombre2"></span>
-          <br />
-          <p>Especie:</p> <span id="especie2"></span>
-          <br />
-          <p>Estado:</p> <span id="estado2"></span>
-          <br />
-          <p>Cantidad de Episodios:</p> <span id="cantEpisodios2"></span>
-          <br />
-        </div>
-      </div>
-    <span id="ganador"></span>
-    </div>
-
-    <script src="js/app.js"></script>
-  </body>
+    <div id="map"></div>
+  </main>
+  <script src="js/leaflet.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
+
+<!-- RandomUser.me Leafletjs.com -->
+<!-- Generar un boton consultar, donde manda el ID a ser consultado, va a mostrar Nombre, apellido, cod. identificacion, y mostrar las coordenadas (latitud y longitud) y la foto. Female= verde Male=amaarillo -->
+
+<!-- Traer persona de random user, y una de rick and morty que sea una id random y cuando coincide el GENDER aparezca una tilde verde o "coincidio" -->

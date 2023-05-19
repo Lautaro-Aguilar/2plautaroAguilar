@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+span, h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+#ganador {
+  font-size: 30px;
+}
+
+p {
+  margin: 0px;
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.card {
+  background-color: darkcyan;
+  width: 500px;
+  text-align: center;
+  color: #fff;
+  padding: 40px 0px;
+  border-radius: 15px;
+  border: 2px solid yellow;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+/* .imagen {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: 170px;
+  border: 2px solid yellow;
+} */
+
+button {
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: rgb(207, 207, 1);
+  color: #000;
+}
+
+input {
+  all: unset;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px;
+}

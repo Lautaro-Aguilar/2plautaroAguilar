@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/leaflet.css">
-  <title>Tp 3 LautaroAguilar</title>
-</head>
-<body>
-  <main id="test" class="card">
-    <div id="tarjetaUser" class="tarjetaUser">
-      <img id="imagen" class="imagen" src="" alt="" />
-      <br />
-      <p>Nombre: <span id="nombre"></span></p>
-      <br />
-      <p>Apellido: <span id="apellido"></span></p>
-      <br />
-      <p>Genero: <span id="genero"></span></p>
-      <br />
-      <p>CodID: <span id="codigo"></span></p>
-      <input id="numero" />
-      <button id="consultar">Consultar</button>
-      <div id="map"></div>
-    </div>
-  </main>
-  <script src="js/leaflet.js"></script>
-  <script src="js/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <script src="https://kit.fontawesome.com/ef9d931adf.js" crossorigin="anonymous"></script>
+    <title>Tp 3 LautaroAguilar</title>
+  </head>
+  <body>
+    <main id="test" class="card">
+        <button id="consultar" class="boton">Consultar</button>
+
+          <div id="tarjetaUser" class="tarjetaUser oculto">
+            <div class="contentWrapper">
+              <div class="imagenWrapperUsuario">
+                <img id="imagenUsuario" class="imagen" onerror="this.src=' '" src="" alt="" />
+              </div>
+              <div class="infoWrapper">
+                <div class="title-email">
+                  <span class="nombre textoUsuario" id="nombre"></span>
+                  <span class="email textoUsuario" id="email"></span>
+                </div>
+                <div class="mb-10"><i class="genderIcon fa-regular"></i> <span id="genero" class="genero textoUsuario"></span></div>
+                <div class="mb-10"><i class="license fa-regular fa-id-card"></i><span id="codigo" class="codigo textoUsuario"></span></div>
+                <div class="mb-10"><i class="phoneIcon fa-solid fa-phone"></i><span id="telefono" class="telefono textoUsuario"></span></div>
+                <div><i class="locationIcon fa-solid fa-location-crosshairs"></i><span id="ubicacion" class="textoUsuario">Ubicación</span></div>
+              </div>
+            </div>
+          
+          </div>
+          <section class="modal hidden">
+              <button class="btn-close">X</button>
+              <div id="map"></div>
+            </section>
+          </div>
+          <span id="match" class="oculto"></span>
+            <div id="tarjetaPersonaje" class="tarjetaPersonaje oculto">
+              <div class="contentWrapper">
+                <div class="imagenWrapperPersonaje">
+                  <img src="" class="imagen" onerror="this.src=' '" id="imagenPersonaje">
+                </div>
+                <div class="infoWrapper">
+                  <div class="title-email">
+                    <span class="nombre textoPersonaje" id="nombrePersonaje"></span>
+                    <span class="type textoPersonaje" id="tipoPersonaje"></span>
+                  </div>
+                  <div class="mb-10"><span id="generoPersonaje" class="textoPersonaje"></span></div>
+                  <div class="mb-10"><span id="especie" class="textoPersonaje"></span></div>
+                  <div class="mb-10"><span id="estado" class="textoPersonaje"></span></div>
+                  <div><span id="codigoPersonaje" class="textoPersonaje">Ubicación</span></div>
+                </div>
+              </div>
+            </div>
+                <div class="overlay hidden"></div>
+        </div>
+    </main>
+    <script src="js/leaflet.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
 
 <!-- RandomUser.me Leafletjs.com -->
